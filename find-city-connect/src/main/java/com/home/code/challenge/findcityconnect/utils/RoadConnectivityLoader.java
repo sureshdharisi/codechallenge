@@ -12,12 +12,14 @@ import java.util.stream.Collectors;
 import javax.annotation.PostConstruct;
 
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
 @Component
 public class RoadConnectivityLoader {
-
+	Logger logger = LoggerFactory.getLogger(RoadConnectivityLoader.class);
 	private List<String> citiesList=new ArrayList<>();
 	
 	@PostConstruct
@@ -30,7 +32,7 @@ public class RoadConnectivityLoader {
 				String[] cities=line.split(",");
 				return StringUtils.trim(StringUtils.upperCase(cities[0]))+StringUtils.trim(StringUtils.upperCase(cities[1]));
 			}).collect(Collectors.toList());
-			System.out.println(citiesList);
+			logger.debug(citiesList.toString());
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}finally {

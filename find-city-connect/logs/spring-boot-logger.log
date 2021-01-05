@@ -1,0 +1,7 @@
+2021-01-04 23:55:06,802 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting FindCityConnectApplication using Java 15.0.1 on DESKTOP-CTGQ32V with PID 5136 (E:\Projects\SpringBoot\CodeChallenge\find-city-connect\target\classes started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-04 23:55:06,807 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-04 23:55:06,808 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-01-04 23:55:12,709 DEBUG com.home.code.challenge.findcityconnect.utils.RoadConnectivityLoader [restartedMain] [BOSTONNEW YORK, PHILADELPHIANEWARK, NEWARKBOSTON, TRENTONALBANY]
+2021-01-04 23:55:13,388 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started FindCityConnectApplication in 9.376 seconds (JVM running for 11.745)
+2021-01-04 23:55:32,797 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnecterController [http-nio-8080-exec-1] city 1 Boston
+2021-01-04 23:55:32,799 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnecterController [http-nio-8080-exec-1] city 2 Philadelphia
