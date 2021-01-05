@@ -22,6 +22,11 @@ public class RoadConnectivityLoader {
 	Logger logger = LoggerFactory.getLogger(RoadConnectivityLoader.class);
 	private List<String> citiesList=new ArrayList<>();
 	
+	/**
+	 * This component will read data from city.txt and hold in the cities list variable.
+	 * 
+	 * This data will be act as a cache in the container.
+	 */
 	@PostConstruct
 	public void loadConnectivityData() {
 		BufferedReader br=null;
@@ -46,6 +51,15 @@ public class RoadConnectivityLoader {
 		}
 	}
 	
+	/**
+	 * It will accept two cities and verify both cities are connected or not. If both cities are connected in either direction, then it will return true.
+	 * 
+	 * If both are not connected, then it will return false.
+	 * 
+	 * @param city1
+	 * @param city2
+	 * @return
+	 */
 	public boolean isCitiesConnected(String city1,String city2) {
 		String connectivity=StringUtils.trim(StringUtils.upperCase(city1))+StringUtils.trim(StringUtils.upperCase(city2));
 		if(citiesList.contains(connectivity)) {
