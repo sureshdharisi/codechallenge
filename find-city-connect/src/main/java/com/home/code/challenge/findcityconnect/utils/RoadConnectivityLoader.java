@@ -2,13 +2,16 @@ package com.home.code.challenge.findcityconnect.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 
 import javax.annotation.PostConstruct;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,21 +35,15 @@ public class RoadConnectivityLoader {
 		BufferedReader br=null;
 		try {
 			File file = ResourceUtils.getFile("classpath:city.txt");
-			br=new BufferedReader(new FileReader(file)) ;
+			br=new BufferedReader(new InputStreamReader(new FileInputStream(file),Charset.forName("UTF-8"))) ;
 					br.lines().forEach(line->{
 				String[] cities=line.split(",");
 				registry.registerConnectivity(StringUtils.upperCase(StringUtils.trim( cities[0])), StringUtils.upperCase(StringUtils.trim(cities[1])));
 			});
-		} catch (FileNotFoundException e) {
+		} catch (Exception e) {
 			logger.error("Exception while reading data from file",e);
 		}finally {
-			if(br!=null) {
-				try {
-					br.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
+			IOUtils.closeQuietly(br);
 		}
 		registry.flatConnectivity();
 	}

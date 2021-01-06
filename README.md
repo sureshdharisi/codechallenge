@@ -27,6 +27,9 @@ This service will give the the details about the connectivity between the two ci
 ## Coverage Details
 ![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/coverage_details.PNG?raw=true)
 
+## Junit test cases details
+![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/JunitTestCases.PNG?raw=true)
+
 ## Implementation steps:
 - Prepare the data which hold complete connectivity details from each city and store it in the map where key is the city and value is the series of connected cities with direct connection and indirect connection at the time of bootstrap.
 - This data is case insensitive means user can send the data in any case.
@@ -100,3 +103,12 @@ http://localhost:8080/v2/api-docs
 ````
 http://localhost:8080/actuator/
 ````
+### Generate spotbug report
+1. Run below command to generate spot bug report
+````
+mvn site
+````
+Now report will be generated in the target folder and the location is "find-city-connect\target\site\spotbugs.html"
+
+## Spotbugs report
+![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/Spotbug_Report.PNG?raw=true)
