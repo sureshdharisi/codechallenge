@@ -15,8 +15,10 @@ This service will give the the details about the connectivity between the two ci
 
 ## Technologies Used
 
-- Java 11
+- Java 8 (This will work with java 11 also. We need to modify the version in the pom.xml to point to 11 (<java.version>11</java.version>)).
 - SpringBoot 2.4.x
+
+If you use java.version 11, then make sure java_home also should point to java 11 to build the project in the command prompt.
 
 ## Tools used
 
