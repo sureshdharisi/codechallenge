@@ -25,3 +25,4 @@ This service will give the the details about the connectivity between the two ci
 - STS 4.x for development
 
 ## Coverage Details
+![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/coverage_details.PNG?raw=true)
