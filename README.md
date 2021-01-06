@@ -73,3 +73,30 @@ http://localhost:8080/connected?origin=Boston&destination=
   "errorCode": "CITY001"
 }
 ```
+
+### How to run?
+1. Download the code from github using below url
+```
+git clone https://github.com/sureshdharisi/codechallenge.git
+```
+2. Goto the project where pom.xml is located and run the maven command. The below command will run the junit test cases automatically
+```
+mvn clean install
+```
+3. Run the application using spring boot plugin.
+```
+mvn spring-boot:run
+```
+
+### Swagger UI
+```
+http://localhost:8080/swagger-ui/index.html
+```
+### Swagger YAML
+````
+http://localhost:8080/v2/api-docs
+````
+### Actuator URL
+````
+http://localhost:8080/actuator/
+````

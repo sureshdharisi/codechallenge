@@ -1,0 +1,146 @@
+2021-01-06 00:57:57,591 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting FindCityConnectApplication using Java 15.0.1 on DESKTOP-CTGQ32V with PID 27888 (E:\Projects\SpringBoot\CodeChallenge\find-city-connect\target\classes started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-06 00:57:57,597 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-06 00:57:57,598 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-01-06 00:58:01,003 DEBUG com.home.code.challenge.findcityconnect.utils.ConnectivityRegistry [restartedMain] Connectivity Map= {NEW YORK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, NEWARK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, TRENTON=TRENTON-ALBANY, PHILADELPHIA=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALLEN TOWN=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, BOSTON=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALBANY=TRENTON-ALBANY}
+2021-01-06 00:58:02,644 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started FindCityConnectApplication in 5.756 seconds (JVM running for 6.983)
+2021-01-06 00:58:36,464 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-8080-exec-3] city 1  
+2021-01-06 00:58:36,466 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-8080-exec-3] city 2 Newark
+2021-01-06 00:58:36,476 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [com.home.code.challenge.findcityconnect.exception.InvalidDataException: Origin city is required]
+2021-01-06 01:07:28,510 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting FindCityConnectApplication using Java 15.0.1 on DESKTOP-CTGQ32V with PID 27888 (E:\Projects\SpringBoot\CodeChallenge\find-city-connect\target\classes started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-06 01:07:28,513 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-06 01:07:28,514 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-01-06 01:07:29,520 DEBUG com.home.code.challenge.findcityconnect.utils.ConnectivityRegistry [restartedMain] Connectivity Map= {NEW YORK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, NEWARK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, TRENTON=TRENTON-ALBANY, PHILADELPHIA=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALLEN TOWN=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, BOSTON=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALBANY=TRENTON-ALBANY}
+2021-01-06 01:07:29,856 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started FindCityConnectApplication in 2.169 seconds (JVM running for 574.196)
+2021-01-06 01:07:50,702 INFO org.springframework.boot.StartupInfoLogger [main] Starting CityConnectorControllerTest using Java 15.0.1 on DESKTOP-CTGQ32V with PID 19584 (started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-06 01:07:50,705 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-06 01:07:50,710 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-06 01:07:53,067 DEBUG com.home.code.challenge.findcityconnect.utils.ConnectivityRegistry [main] Connectivity Map= {NEW YORK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, NEWARK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, TRENTON=TRENTON-ALBANY, PHILADELPHIA=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALLEN TOWN=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, BOSTON=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALBANY=TRENTON-ALBANY}
+2021-01-06 01:07:55,972 INFO org.springframework.boot.StartupInfoLogger [main] Started CityConnectorControllerTest in 5.974 seconds (JVM running for 7.728)
+2021-01-06 01:07:56,821 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Boston
+2021-01-06 01:07:56,822 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Newark
+2021-01-06 01:07:57,006 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Boston
+2021-01-06 01:07:57,007 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Philadelphia
+2021-01-06 01:07:57,020 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Philadelphia
+2021-01-06 01:07:57,028 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Albany
+2021-01-06 01:07:57,056 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1  
+2021-01-06 01:07:57,056 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Newark
+2021-01-06 01:07:57,065 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 null
+2021-01-06 01:07:57,065 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Newark
+2021-01-06 01:07:57,074 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Philadelphia
+2021-01-06 01:07:57,075 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2  
+2021-01-06 01:07:57,086 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Philadelphia
+2021-01-06 01:07:57,087 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 
+2021-01-06 01:07:57,097 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Philadelphia
+2021-01-06 01:07:57,098 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 null
+2021-01-06 01:07:57,284 INFO org.springframework.boot.StartupInfoLogger [main] Starting CityConnectorControllerWebTest using Java 15.0.1 on DESKTOP-CTGQ32V with PID 19584 (started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-06 01:07:57,285 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-06 01:07:57,288 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-06 01:07:59,612 DEBUG com.home.code.challenge.findcityconnect.utils.ConnectivityRegistry [main] Connectivity Map= {NEW YORK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, NEWARK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, TRENTON=TRENTON-ALBANY, PHILADELPHIA=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALLEN TOWN=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, BOSTON=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALBANY=TRENTON-ALBANY}
+2021-01-06 01:08:00,848 INFO org.springframework.boot.StartupInfoLogger [main] Started CityConnectorControllerWebTest in 3.632 seconds (JVM running for 12.604)
+2021-01-06 01:08:01,068 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-1] city 1 Boston
+2021-01-06 01:08:01,068 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-1] city 2 Newark
+2021-01-06 01:08:01,119 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-2] city 1 Boston
+2021-01-06 01:08:01,121 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-2] city 2 Philadelphia
+2021-01-06 01:08:01,134 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-3] city 1 Philadelphia
+2021-01-06 01:08:01,135 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-3] city 2 Albany
+2021-01-06 01:08:01,149 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-4] city 1  
+2021-01-06 01:08:01,149 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-4] city 2 Newark
+2021-01-06 01:08:01,266 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-5] city 1 null
+2021-01-06 01:08:01,266 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-5] city 2 Newark
+2021-01-06 01:08:01,284 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-6] city 1 Philadelphia
+2021-01-06 01:08:01,285 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-6] city 2  
+2021-01-06 01:08:01,299 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-7] city 1 Philadelphia
+2021-01-06 01:08:01,302 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-7] city 2 
+2021-01-06 01:08:01,321 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-8] city 1 Philadelphia
+2021-01-06 01:08:01,322 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-8] city 2 null
+2021-01-06 01:08:53,317 INFO org.springframework.boot.StartupInfoLogger [main] Starting CityConnectorControllerTest using Java 1.8.0_151 on DESKTOP-CTGQ32V with PID 29540 (started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-06 01:08:53,375 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-06 01:08:53,380 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-06 01:08:57,005 DEBUG com.home.code.challenge.findcityconnect.utils.ConnectivityRegistry [main] Connectivity Map= {NEW YORK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, NEWARK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, TRENTON=TRENTON-ALBANY, PHILADELPHIA=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALLEN TOWN=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, BOSTON=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALBANY=TRENTON-ALBANY}
+2021-01-06 01:09:00,179 INFO org.springframework.boot.StartupInfoLogger [main] Started CityConnectorControllerTest in 7.551 seconds (JVM running for 9.83)
+2021-01-06 01:09:01,130 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Boston
+2021-01-06 01:09:01,131 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Newark
+2021-01-06 01:09:01,292 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Boston
+2021-01-06 01:09:01,292 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Philadelphia
+2021-01-06 01:09:01,301 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Philadelphia
+2021-01-06 01:09:01,301 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Albany
+2021-01-06 01:09:01,312 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1  
+2021-01-06 01:09:01,314 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Newark
+2021-01-06 01:09:01,322 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 null
+2021-01-06 01:09:01,326 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 Newark
+2021-01-06 01:09:01,346 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Philadelphia
+2021-01-06 01:09:01,348 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2  
+2021-01-06 01:09:01,382 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Philadelphia
+2021-01-06 01:09:01,383 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 
+2021-01-06 01:09:01,398 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 1 Philadelphia
+2021-01-06 01:09:01,400 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [main] city 2 null
+2021-01-06 01:09:01,580 INFO org.springframework.boot.StartupInfoLogger [main] Starting CityConnectorControllerWebTest using Java 1.8.0_151 on DESKTOP-CTGQ32V with PID 29540 (started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-06 01:09:01,581 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-06 01:09:01,588 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-06 01:09:03,659 DEBUG com.home.code.challenge.findcityconnect.utils.ConnectivityRegistry [main] Connectivity Map= {NEW YORK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, NEWARK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, TRENTON=TRENTON-ALBANY, PHILADELPHIA=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALLEN TOWN=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, BOSTON=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALBANY=TRENTON-ALBANY}
+2021-01-06 01:09:05,124 INFO org.springframework.boot.StartupInfoLogger [main] Started CityConnectorControllerWebTest in 3.644 seconds (JVM running for 14.775)
+2021-01-06 01:09:06,078 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-10] city 1 Boston
+2021-01-06 01:09:06,080 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-10] city 2 Newark
+2021-01-06 01:09:06,204 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-9] city 1 Boston
+2021-01-06 01:09:06,205 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-9] city 2 Philadelphia
+2021-01-06 01:09:06,242 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-9] city 1 Philadelphia
+2021-01-06 01:09:06,243 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-9] city 2 Albany
+2021-01-06 01:09:06,263 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-9] city 1  
+2021-01-06 01:09:06,264 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-9] city 2 Newark
+2021-01-06 01:09:06,525 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-7] city 1 null
+2021-01-06 01:09:06,526 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-7] city 2 Newark
+2021-01-06 01:09:06,542 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-6] city 1 Philadelphia
+2021-01-06 01:09:06,543 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-6] city 2  
+2021-01-06 01:09:06,559 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-4] city 1 Philadelphia
+2021-01-06 01:09:06,560 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-4] city 2 
+2021-01-06 01:09:06,575 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-5] city 1 Philadelphia
+2021-01-06 01:09:06,575 DEBUG com.home.code.challenge.findcityconnect.controller.CityConnectorController [http-nio-auto-1-exec-5] city 2 null
+2021-01-06 01:11:19,046 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting FindCityConnectApplication using Java 1.8.0_151 on DESKTOP-CTGQ32V with PID 27196 (E:\Projects\SpringBoot\CodeChallenge\find-city-connect\target\classes started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-06 01:11:19,050 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-06 01:11:19,051 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-01-06 01:11:21,011 DEBUG com.home.code.challenge.findcityconnect.utils.ConnectivityRegistry [restartedMain] Connectivity Map= {NEW YORK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, NEWARK=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, TRENTON=TRENTON-ALBANY, PHILADELPHIA=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALLEN TOWN=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, BOSTON=NEWARK-NEW YORK-PHILADELPHIA-ALLEN TOWN-BOSTON, ALBANY=TRENTON-ALBANY}
+2021-01-06 01:11:21,929 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started FindCityConnectApplication in 3.557 seconds (JVM running for 4.223)
+2021-01-06 01:15:04,602 INFO org.springframework.boot.StartupInfoLogger [main] Starting FindCityConnectApplication v0.0.1-SNAPSHOT using Java 1.8.0_271 on DESKTOP-CTGQ32V with PID 14540 (E:\Projects\SpringBoot\CodeChallenge\find-city-connect\target\find-city-connect-0.0.1-SNAPSHOT.jar started by Anila in E:\Projects\SpringBoot\CodeChallenge\find-city-connect)
+2021-01-06 01:15:04,609 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-06 01:15:04,610 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-01-06 01:15:09,153 ERROR com.home.code.challenge.findcityconnect.utils.RoadConnectivityLoader [main] Exception while reading data from file
+java.io.FileNotFoundException: class path resource [city.txt] cannot be resolved to absolute file path because it does not reside in the file system: jar:file:/E:/Projects/SpringBoot/CodeChallenge/find-city-connect/target/find-city-connect-0.0.1-SNAPSHOT.jar!/BOOT-INF/classes!/city.txt
+	at org.springframework.util.ResourceUtils.getFile(ResourceUtils.java:217)
+	at org.springframework.util.ResourceUtils.getFile(ResourceUtils.java:180)
+	at com.home.code.challenge.findcityconnect.utils.RoadConnectivityLoader.loadConnectivityData(RoadConnectivityLoader.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.home.code.challenge.findcityconnect.FindCityConnectApplication.main(FindCityConnectApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2021-01-06 01:15:09,154 DEBUG com.home.code.challenge.findcityconnect.utils.ConnectivityRegistry [main] Connectivity Map= {}
+2021-01-06 01:15:11,453 INFO org.springframework.boot.StartupInfoLogger [main] Started FindCityConnectApplication in 8.571 seconds (JVM running for 10.107)
