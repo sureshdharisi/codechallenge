@@ -30,6 +30,29 @@ If you are using java.version 11, then make sure java_home also should point to 
 ## Coverage Details
 ![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/coverage_details.PNG?raw=true)
 
+## Test data
+
+City1 | City2 
+------------ | -------------
+Boston |  New York
+Philadelphia | Newark
+Newark | Boston
+Trenton | Albany
+Newark | Allen Town
+Philadelphia | Allen Town
+
+## Implemented test cases and expected results
+Origin | Destination | Connectivity
+------------ | ------------- | -------------
+Boston | Newark | yes
+Boston | Philadelphia | yes
+Boston | Phila%delphia | no
+Philadelphia | Albany | no
+Trenton | Albany | yes
+Albany | Trenton | yes
+Alb$any | Trenton | no
+Trenton | Alb#any | no
+
 ## Junit test cases details
 ![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/JunitTestCases.PNG?raw=true)
 

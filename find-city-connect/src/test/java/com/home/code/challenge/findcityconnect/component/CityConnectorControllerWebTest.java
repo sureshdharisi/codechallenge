@@ -27,7 +27,12 @@ public class CityConnectorControllerWebTest extends BaseWebTestCase{
 	    return Stream.of(
 	      Arguments.of("Boston", "Newark","yes"),
 	      Arguments.of("Boston", "Philadelphia","yes"),
-	      Arguments.of("Philadelphia", "Albany","no")
+	      Arguments.of("Boston", "Phila%delphia","no"),
+	      Arguments.of("Philadelphia", "Albany","no"),
+	      Arguments.of("Trenton", "Albany","yes"),
+	      Arguments.of("Albany", "Trenton","yes"),
+	      Arguments.of("Alb$any", "Trenton","no"),
+	      Arguments.of("Trenton", "Alb#any","no")
 	    );
 	}
 

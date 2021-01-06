@@ -18,8 +18,6 @@ public class ConnectivityRegistry {
 	private Logger logger = LoggerFactory.getLogger(ConnectivityRegistry.class);
 	private Map<String, Set<String>> cityConnectivityRegistry = new ConcurrentHashMap<>();
 
-	private Map<String, String> cityConnectivityMapping = new ConcurrentHashMap<>();
-
 	public synchronized void registerConnectivity(String origin, String destination) {
 		startRegistration(origin, destination, new ArrayList<>());
 	}
@@ -45,16 +43,6 @@ public class ConnectivityRegistry {
 
 	}
 
-	public synchronized void flatConnectivity() {
-		cityConnectivityRegistry.entrySet().forEach(entry -> {
-			String key = entry.getKey();
-			String value = StringUtils.join(entry.getValue(), "-");
-			cityConnectivityMapping.put(key, value);
-		});
-		cityConnectivityRegistry.clear();
-		logger.debug("Connectivity Map= {}", cityConnectivityMapping);
-	}
-
 	/**
 	 * It will accept two cities and verify both cities are connected or not. If
 	 * both cities are connected in either direction, then it will return true.
@@ -68,7 +56,8 @@ public class ConnectivityRegistry {
 	public boolean isCitiesConnected(String origin, String destination) {
 		origin = StringUtils.upperCase(origin);
 		destination = StringUtils.upperCase(destination);
-		String connectivity = cityConnectivityMapping.getOrDefault(origin, "");
-		return StringUtils.contains(connectivity, destination);
+		Set<String> connectivityList = cityConnectivityRegistry.getOrDefault(origin,new HashSet<>());
+		logger.debug("Connectivity = "+connectivityList);
+		return connectivityList.contains( origin)&&connectivityList.contains(destination);
 	}
 }
