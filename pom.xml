@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.home.code.challenge</groupId>
+	<artifactId>code-challenge-modules</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
+		<java.version>17</java.version>
+		<commons.lang.version>3.11</commons.lang.version>
+		<spotbug.version>4.2.0</spotbug.version>
+		<maven.site.plugin.version>3.9.1</maven.site.plugin.version>
+		<maven.project.info.reports.plugin.version>3.1.1</maven.project.info.reports.plugin.version>
+		<commons-io.version>2.8.0</commons-io.version>
+	</properties>
+	<modules>
+		<module>find-city-connect</module>
+	</modules>
+
+</project>
