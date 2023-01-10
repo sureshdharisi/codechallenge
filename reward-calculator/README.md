@@ -28,7 +28,7 @@ If you are using java.version 11, then make sure java_home also should point to 
 - Spotbugs plugin
 
 ## Coverage Details
-![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/coverage_details.PNG?raw=true)
+![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/reward-calculator/CodeCoverage_Details.PNG?raw=true)
 
 ## Configuration details
 The current limit configuration details:
@@ -140,33 +140,28 @@ http://localhost:8585/rewards/calculate/
 ```
 git clone https://github.com/sureshdharisi/codechallenge.git
 ```
-2. Goto the project where pom.xml is located and run the maven command. The below command will run the junit test cases automatically
+2. Goto the project where pom.xml is located 
+```
+cd codechallenge/reward-calculator
+```
+3. Run the maven command. The below command will run the junit test cases automatically
 ```
 mvn clean install
 ```
-3. Run the application using spring boot plugin.
+4. Run the application using spring boot plugin.
 ```
 mvn spring-boot:run
 ```
-
-### Swagger UI
-```
-http://localhost:8080/swagger-ui/index.html
-```
-### Swagger YAML
+### Management URL
 ````
-http://localhost:8080/v2/api-docs
-````
-### Actuator URL
-````
-http://localhost:8080/actuator/
+http://localhost:8585/rewards/manage
 ````
 ### Generate spotbug report
 1. Run below command to generate spot bug report
 ````
 mvn site
 ````
-Now report will be generated in the target folder and the location is "find-city-connect\target\site\spotbugs.html"
+Now report will be generated in the target folder and the location is "reward-calculator\target\site\spotbugs.html"
 
 ## Spotbugs report
-![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/Spotbug_Report.PNG?raw=true)
+![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/reward-calculator/Spotbugs_Report.PNG?raw=true)
