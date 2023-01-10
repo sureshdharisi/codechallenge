@@ -164,4 +164,4 @@ mvn site
 Now report will be generated in the target folder and the location is "reward-calculator\target\site\spotbugs.html"
 
 ## Spotbugs report
-![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/reward-calculator/Spotbugs_Report.PNG?raw=true)
+![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/reward-calculator/Spotbugs_report.PNG?raw=true)
