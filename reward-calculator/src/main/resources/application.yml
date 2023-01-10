@@ -1,0 +1,24 @@
+logging:
+  level:
+    com:
+      coding: DEBUG
+    org:
+      springframework:
+        web: INFO
+  pattern:
+    console: '%black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %msg%n%throwable'
+server:
+  port: 8585
+  servlet:
+    context-path: /rewards
+spring:
+  application:
+    name: reward-calculator
+    
+rewards:
+  limits:
+    - lowerLimit: 50
+      upperLimit: 100
+      points: 1
+    - lowerLimit: 100
+      points: 2

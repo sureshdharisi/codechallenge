@@ -17,6 +17,7 @@
 	</properties>
 	<modules>
 		<module>find-city-connect</module>
+		<module>reward-calculator</module>
 	</modules>
 
 </project>
