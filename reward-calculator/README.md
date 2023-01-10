@@ -2,104 +2,136 @@
 
 ## Introduction
 
-This service will give the the details about the connectivity between the two cities. Configured the connected cities in the cities.txt file and loads the data while starting of the application. This spring boot micro service also includes the below features
+This service will calculated the rewards points based on the purchase amount. This spring boot micro service also includes the below features
 
-- SwaggerUI and REST documentation
 - Junit parameterized test cases
-- Code coverage with EclEmma
+- Code coverage 
 - Functional test cases (Possitive & Negative)
 - Logging using logback
 - Actuator metrics
 - Exception handling
 - Java documentation
+- Lombok for automatic code generation
 
 ## Technologies Used
 
-- Java 8 (This will work with java 11 also. We need to modify the version in the pom.xml to point to 11 (_<java.version>11</java.version>_)).
-- SpringBoot 2.4.x
+- Java 17 (This will work with java 11 also. We need to modify the version in the pom.xml to point to 11 (_<java.version>11</java.version>_)).
+- SpringBoot 3.0.x
 
 If you are using java.version 11, then make sure java_home also should point to java 11 to build the project in the command prompt.
 
 ## Tools used
 
 - Maven for build
-- EclEmma for coverage
+- Jacoco for coverage
 - STS 4.x for development
 - Spotbugs plugin
 
 ## Coverage Details
 ![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/coverage_details.PNG?raw=true)
 
-## Test data
+## Configuration details
+The current limit configuration details:
 
-City1 | City2 
------------- | -------------
-Boston |  New York
-Philadelphia | Newark
-Newark | Boston
-Trenton | Albany
-Newark | Allen Town
-Philadelphia | Allen Town
+Lower limit: 50, Upper limit = 100 , points = 1 
+Lower limit: 100, Upper limit = <nolimit> , points = 2
 
-## Implemented test cases and expected results
-Origin | Destination | Connectivity
------------- | ------------- | -------------
-Boston | Newark | yes
-Boston | Philadelphia | yes
-Boston | Phila%delphia | no
-Philadelphia | Albany | no
-Trenton | Albany | yes
-Albany | Trenton | yes
-Alb$any | Trenton | no
-Trenton | Alb#any | no
+## Test data and Results
+
+Purchase amount | Expected results |
+------------------- | -------------------|
+120.0 | 90 |
+100.0 | 50 |
+90.0 | 40 |
+99.5 | 49 |
+50.0 | 0 |
+49.0 | 0 |
+51.0 | 1 |
+
 
 ## Junit test cases details
 ![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/JunitTestCases.PNG?raw=true)
 
-## Implementation steps:
-- Prepare the data which hold complete connectivity details from each city and store it in the map where key is the city and value is the series of connected cities with direct connection and indirect connection at the time of bootstrap.
-- This data is case insensitive means user can send the data in any case.
-- If user requested for origin and destination city connectivity, then the connecitivity registry will pull the data from map and check the destination is there or not in the connected cities. If it present, then service will return yes else no.
-- This service is expecting both origin and destination cities are mandatory. If anyone is not present, then application will not accept the data and respond with 400 status code with some error code details. So that consumer can correct the input data.
-- Extensive junits are implemented to check service is responding properly or not.
-- Predefined connectivity details are available in cities.txt file.
 
 ### Some sample requests
 * Input -1 
 ```
-http://localhost:8080/connected?origin=Boston&destination=Newark
+http://localhost:8585/rewards/calculate/120.0
 ```
 
 ```json
-yes
+{
+    "points": 90
+}
 ```
 
 * Input -2
 ```
-http://localhost:8080/connected?origin=Boston&destination=Philadelphia
+http://localhost:8585/rewards/calculate/100.0
 ```
 
 ```json
-yes
+{
+    "points": 50
+}
 ```
 
 * Input -3 
 ```
-http://localhost:8080/connected?origin=Philadelphia&destination=Albany
+http://localhost:8585/rewards/calculate/90.0
 ```
 
 ```json
-No
+{
+    "points": 40
+}
+```
+
+* Input -4 
+```
+http://localhost:8585/rewards/calculate/99.5
+```
+
+```json
+{
+    "points": 49
+}
+```
+
+* Input -5 
+```
+http://localhost:8585/rewards/calculate/50.0
+```
+
+```json
+{
+    "points": 0
+}
 ```
 ### Some error responses
 * Input -1 
 ```
-http://localhost:8080/connected?origin=Boston&destination=
+http://localhost:8585/rewards/calculate/abc
 ```
+
 ```json
 {
-  "errorMessage": "Origin city is required",
-  "errorCode": "CITY001"
+    "errorMessage": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; For input string: \"abc\"",
+    "errorCode": "RC000"
+}
+```
+
+* Input -2
+```
+http://localhost:8585/rewards/calculate/ 
+
+(input is blank space)
+```
+
+```json
+{
+    "errorMessage": "Required URI template variable 'purchaseAmount' for method parameter type Double is present but converted to null",
+    "errorCode": "RC000"
 }
 ```
 
