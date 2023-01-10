@@ -1,4 +1,4 @@
-# Connect city code challenge
+# Calculate the reward points
 
 ## Introduction
 
@@ -50,7 +50,7 @@ Purchase amount | Expected results |
 
 
 ## Junit test cases details
-![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/find-city-connect/JunitTestCases.PNG?raw=true)
+![alt text](https://github.com/sureshdharisi/codechallenge/blob/master/reward-calculator/Junit_Test_cases.PNG?raw=true)
 
 
 ### Some sample requests
